@@ -1,7 +1,10 @@
 import { Box, Image, Heading, Button} from 'theme-ui'
+import { ThemeProvider } from 'theme-ui'
+import theme from '#/lib/theme'
 
 const Header = () => { 
     return (
+        <ThemeProvider theme={theme}>
         <Box sx={{ 
             padding: '20px',
             justifyContent: 'space-between', 
@@ -33,12 +36,14 @@ const Header = () => {
                 backgroundColor: '#0D0C0C',
 
             }}>
-            <Button variant="flush" sx={{backgroundColor: '#0D0C0C',}}><Heading as="h1">ORDER</Heading></Button>
-            <Button variant="flush" sx={{backgroundColor: '#0D0C0C',}}><Heading as="h1">CONTACT</Heading></Button>
-            <Button variant="flush" sx={{backgroundColor: '#0D0C0C',}}><Heading as="h1">ABOUT</Heading></Button>
+            <Button variant="flush" sx={{backgroundColor: '#0D0C0C',}}><Heading as="h2">ORDER</Heading></Button>
+            <Button variant="flush" sx={{backgroundColor: '#0D0C0C',}}><Heading as="h2">CONTACT</Heading></Button>
+            <Button variant="flush" sx={{backgroundColor: '#0D0C0C',}}><Heading as="h2">ABOUT</Heading></Button>
 
             </Box>
         </Box>
+        </ThemeProvider>
+
     )
 }
 export default Header
