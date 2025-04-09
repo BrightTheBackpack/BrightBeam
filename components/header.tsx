@@ -4,7 +4,6 @@ import theme from '#/lib/theme'
 
 const Header = () => { 
     return (
-        <ThemeProvider theme={theme}>
         <Box sx={{ 
             padding: '20px',
             justifyContent: 'space-between', 
@@ -42,7 +41,6 @@ const Header = () => {
 
             </Box>
         </Box>
-        </ThemeProvider>
 
     )
 }

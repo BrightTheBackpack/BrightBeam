@@ -1,71 +1,56 @@
 import Head from 'next/head'
 import { Box, Image, Heading, Button} from 'theme-ui'
-
+import Logo from '#/components/home/logo'
+import Sub from '#/components/home/subheader'
 const Home = () => { 
     return (
-        <Box sx={{ 
+        <Box sx={{
+            display: 'flex',
+            flexDirection: 'row',
+        }}>
+            <Box sx={{ 
             padding: '20px',
             justifyContent: 'top', 
             backgroundColor: '#0D0C0C',
             color: '#DBDBDB',
             display: 'flex',
+
             position: 'relative',
             height: '100vh',
+            width: '50vw',
             flexDirection: 'column',
              }}>
-                <Heading sx={{
-                    
-                    color: '#DBDBDB',
-                    fontSize: '5rem',
-                    marginBottom: '20px'
-                
-                }}>brightbeam</Heading>
-                <Heading sx={{
-                    color: '#DBDBDB',
-                    fontSize: '5rem',
-                    marginBottom: '20px'
-                
-                }}>engraving</Heading>
-                <Box sx={{
-                    display:'inline-block',
+                <Logo />
+                <Sub />
+               
+              
 
-                }}>
-                <Heading sx={{
-                    display:'inline-block',
-                    fontSize: 3,
-                }}>Engraving </Heading>{" "}
-                <Heading sx={{
-                    display:'inline-block',
-                    fontSize: 4,
-                    backgroundClip: 'text',
-                    WebkitBackgroundClip: 'text',
-                    color: 'transparent',
-                    WebkitTextFillColor: 'transparent',
+            </Box>
+            <Box sx={{
+                backgroundColor: '#0D0C0C',
+                width: '50vw',
+                justifyContent: 'top', 
+                position: 'relative',
 
-                    backgroundImage: 'linear-gradient(90deg, #FF2D2D, #FEB626)',
-                }}>Memories </Heading>
-                <Heading sx={{
-                    display:'inline-block',
-                    fontSize: 3,
-                }}>, One </Heading>{" "}
-                <Heading sx={{
-                    display:'inline-block',
-                    fontSize: 4,
-                    backgroundClip: 'text',
-                    WebkitBackgroundClip: 'text',
-                    color: 'transparent',
-                    WebkitTextFillColor: 'transparent',
+                height: '100vh',
+                display: 'flex',
+    
+                flexDirection: 'column',
+                alignItems: 'center',
+    
 
-                    backgroundImage: 'linear-gradient(90deg, #0D608C, #06A6FF)',
+            }}>
+                <Image sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    marginTop: '10vh',
+                    width: '25vw',
+                }}src="/engraving.png" >
 
-                }}>Beam </Heading>{" "}
-                <Heading sx={{
-                    display:'inline-block',
-                    fontSize: 3,
-                }}>at a Time </Heading>
+                </Image>
+            </Box>
 
-                </Box>
-
+            
         </Box>
     )
 }
