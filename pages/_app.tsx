@@ -21,6 +21,11 @@ const globalStyles = css`
   body {
     font-family: 'Tumbly', sans-serif;
   }
+  @keyframes trace-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 `
 
 const mdxComponents = {}

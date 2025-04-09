@@ -47,7 +47,7 @@ const Subheader = () => {
                 <Heading sx={{
                     fontSize: 2
                 }}>
-                Get sustainbly engraved products at a low cost
+                Get sustainably engraved products at a low cost
                 </Heading>
                 <Heading sx={{
                     fontSize: 2,
