@@ -37,6 +37,11 @@ const Home = () => {
                 <Heading sx={{
                     display:'inline-block',
                     fontSize: 4,
+                    backgroundClip: 'text',
+                    WebkitBackgroundClip: 'text',
+                    color: 'transparent',
+                    WebkitTextFillColor: 'transparent',
+
                     backgroundImage: 'linear-gradient(90deg, #FF2D2D, #FEB626)',
                 }}>Memories </Heading>
                 <Heading sx={{
@@ -46,6 +51,11 @@ const Home = () => {
                 <Heading sx={{
                     display:'inline-block',
                     fontSize: 4,
+                    backgroundClip: 'text',
+                    WebkitBackgroundClip: 'text',
+                    color: 'transparent',
+                    WebkitTextFillColor: 'transparent',
+
                     backgroundImage: 'linear-gradient(90deg, #0D608C, #06A6FF)',
 
                 }}>Beam </Heading>{" "}
