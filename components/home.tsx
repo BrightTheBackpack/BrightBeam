@@ -2,8 +2,14 @@ import Head from 'next/head'
 import { Box, Image, Heading, Button} from 'theme-ui'
 import Logo from '#/components/home/logo'
 import Sub from '#/components/home/subheader'
+import Products from "#/components/home/products"
 const Home = () => { 
     return (
+        <Box sx={{
+            backgroundColor: '#0D0C0C',
+            color: '#DBDBDB',
+
+        }}>
         <Box sx={{
             display: 'flex',
             flexDirection: 'row',
@@ -51,6 +57,9 @@ const Home = () => {
             </Box>
 
             
+        </Box>
+        <Products/>
+
         </Box>
     )
 }
